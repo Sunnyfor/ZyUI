@@ -4,13 +4,122 @@
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
-        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnPrimary">@color/color_white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
         <item name="colorSecondaryVariant">@color/teal_700</item>
-        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorOnSecondary">@color/color_black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+
+    <!--通用黑色字体-->
+
+    <style name="style_font_black">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:textColor">@color/font_black</item>
+    </style>
+
+    <style name="style_font_black_small" parent="style_font_black">
+        <item name="android:textSize">@dimen/sp_12</item>
+    </style>
+
+    <style name="style_font_black_smaller" parent="style_font_black">
+        <item name="android:textSize">@dimen/sp_10</item>
+    </style>
+
+    <style name="style_font_black_big" parent="style_font_black">
+        <item name="android:textSize">@dimen/sp_16</item>
+    </style>
+
+    <style name="style_font_black_bigger" parent="style_font_black">
+        <item name="android:textSize">@dimen/sp_18</item>
+    </style>
+
+    <!--通用白色字体-->
+
+    <style name="style_font_white" parent="style_font_black">
+        <item name="android:textColor">@color/font_white</item>
+    </style>
+
+    <style name="style_font_white_small" parent="style_font_white">
+        <item name="android:textSize">@dimen/sp_12</item>
+    </style>
+
+    <style name="style_font_white_smaller" parent="style_font_white">
+        <item name="android:textSize">@dimen/sp_10</item>
+    </style>
+
+    <style name="style_font_white_big" parent="style_font_white">
+        <item name="android:textSize">@dimen/sp_16</item>
+    </style>
+
+    <style name="style_font_white_bigger" parent="style_font_white">
+        <item name="android:textSize">@dimen/sp_18</item>
+    </style>
+
+    <!--通用灰色字体-->
+
+    <style name="style_font_gray" parent="style_font_black">
+        <item name="android:textColor">@color/font_gray</item>
+    </style>
+
+    <style name="style_font_gray_small" parent="style_font_gray">
+        <item name="android:textSize">@dimen/sp_12</item>
+    </style>
+
+    <style name="style_font_gray_smaller" parent="style_font_gray">
+        <item name="android:textSize">@dimen/sp_10</item>
+    </style>
+
+    <style name="style_font_gray_big" parent="style_font_gray">
+        <item name="android:textSize">@dimen/sp_16</item>
+    </style>
+
+    <style name="style_font_gray_bigger" parent="style_font_gray">
+        <item name="android:textSize">@dimen/sp_18</item>
+    </style>
+
+    <!--通用主题色字体-->
+
+    <style name="style_font_theme" parent="style_font_black">
+        <item name="android:textColor">@color/color_theme</item>
+    </style>
+
+    <style name="style_font_theme_small" parent="style_font_theme">
+        <item name="android:textSize">@dimen/sp_12</item>
+    </style>
+
+    <style name="style_font_theme_smaller" parent="style_font_theme">
+        <item name="android:textSize">@dimen/sp_10</item>
+    </style>
+
+    <style name="style_font_theme_big" parent="style_font_theme">
+        <item name="android:textSize">@dimen/sp_16</item>
+    </style>
+
+    <style name="style_font_theme_bigger" parent="style_font_theme">
+        <item name="android:textSize">@dimen/sp_18</item>
+    </style>
+
+    <!--通用横线分割样式-->
+
+    <style name="style_line_horizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/color_line</item>
+    </style>
+
+    <!--通用竖线分割样式-->
+
+    <style name="style_line_vertical">
+        <item name="android:layout_width">0.5dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/color_line</item>
+    </style>
+
 </resources>
