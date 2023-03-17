@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.sunny.zyui.R
-import kotlinx.android.synthetic.main.f1_act_main.*
+
 
 /**
  * Desc 自定义滑动解锁View
@@ -18,17 +18,17 @@ class SlideSwitchButtonActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.f1_act_main)
 
-        btn_start.scrollView = scrollView
-
-        btn_start.onSwitchListener = {
-            if (it) {
-                Toast.makeText(this,"开始操作",Toast.LENGTH_LONG).show()
-                btn_start.start()
-            } else {
-                Toast.makeText(this,"停止操作",Toast.LENGTH_LONG).show()
-                btn_start.stop()
-            }
-        }
+//        btn_start.scrollView = scrollView
+//
+//        btn_start.onSwitchListener = {
+//            if (it) {
+//                Toast.makeText(this,"开始操作",Toast.LENGTH_LONG).show()
+//                btn_start.start()
+//            } else {
+//                Toast.makeText(this,"停止操作",Toast.LENGTH_LONG).show()
+//                btn_start.stop()
+//            }
+//        }
     }
 
 }

@@ -1,19 +1,19 @@
 plugins {
     id 'com.android.application'
-    id 'kotlin-android'
-    id 'kotlin-android-extensions'
+    id 'org.jetbrains.kotlin.android'
+    id 'maven-publish'
 }
 
+apply from: 'https://gitee.com/sunnyfor/GradleConfig/raw/master/config.gradle'
+
 android {
-    compileSdkVersion 30
-    buildToolsVersion "30.0.2"
+    compileSdk project.ext.android.compileSdkVersion
 
     defaultConfig {
-        applicationId "com.sunny.zyui"
-        minSdkVersion 21
-        targetSdkVersion 30
+        minSdk project.ext.android.minSdkVersion
+        targetSdk project.ext.android.targetSdkVersion
         versionCode 1
-        versionName "1.0"
+        versionName version
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -34,13 +34,22 @@ android {
 }
 
 dependencies {
-
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    implementation 'androidx.core:core-ktx:1.2.0'
-    implementation 'androidx.appcompat:appcompat:1.1.0'
-    implementation 'com.google.android.material:material:1.1.0'
-    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
-    testImplementation 'junit:junit:4.+'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation project.ext.dependencies.coreKtx
+    implementation project.ext.dependencies.appcompat
+    implementation project.ext.dependencies.material
+    implementation project.ext.dependencies.recyclerView
 }
+
+//afterEvaluate {
+//    publishing {
+//        publications {
+//            // Creates a Maven publication called "release".
+//            release(MavenPublication) {
+//                from components.release
+//                groupId = 'com.github.Sunnyfor'
+//                artifactId = 'ZyUI'
+//                version = '1.0.0'
+//            }
+//        }
+//    }
+//}
