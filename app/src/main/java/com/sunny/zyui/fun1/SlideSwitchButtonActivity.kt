@@ -16,7 +16,7 @@ class SlideSwitchButtonActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.f1_act_main)
+//        setContentView(R.layout.f1_act_main)
 
 //        btn_start.scrollView = scrollView
 //

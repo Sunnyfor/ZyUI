@@ -19,22 +19,19 @@ class MainActivity : AppCompatActivity() {
 
     private var actionList = ArrayList<ActionBean>()
 
-    private val adapter: ActionAdapter by lazy {
-        ActionAdapter(this, actionList)
-    }
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val recyclerView = RecyclerView(this)
-        setContentView(recyclerView)
+        setContentView(R.layout.activity_main)
 
-        recyclerView.layoutManager = LinearLayoutManager(this)
-        recyclerView.adapter = adapter
+//        val recyclerView = RecyclerView(this)
+//        recyclerView.layoutManager = LinearLayoutManager(this)
+//
+//        actionList.clear()
+//        actionList.add(fun1SlideActivity())
 
-        actionList.clear()
-        actionList.add(fun1SlideActivity())
 
-        adapter.notifyDataSetChanged()
 
     }
 

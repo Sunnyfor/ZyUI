@@ -38,6 +38,7 @@ dependencies {
     implementation project.ext.dependencies.appcompat
     implementation project.ext.dependencies.material
     implementation project.ext.dependencies.recyclerView
+    implementation project.ext.dependencies.constraintLayout
 }
 
 //afterEvaluate {
