@@ -1,14 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:orientation="horizontal">
+
+    <com.sunny.zyui.layout.ZyBgLayout
+        android:id="@+id/zy"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_100"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:borderWidth="@dimen/dp_4"
+        app:borderColor="@color/font_red"
+        app:radius="@dimen/dp_22">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/f1_ic_sketch"
+            android:alpha="1"
+            android:contentDescription="@null" />
+
+    </com.sunny.zyui.layout.ZyBgLayout>
 
     <com.sunny.zyui.layout.ZyBgLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/dp_60"
-        android:background="#ff0000"
-        app:layout_constraintTop_toTopOf="parent"
-        android:padding="10dp"
-        app:radius="@dimen/dp_20"/>
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_height="@dimen/dp_40"
+        android:layout_margin="10dp"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/color_theme"
+        app:radiusTopStart="@dimen/dp_20"
+        app:radiusBottomEnd="@dimen/dp_20"
+        app:borderColor="@color/font_red"
+        app:borderWidth="@dimen/dp_4"
+        app:layout_constraintTop_toBottomOf="@id/zy">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="你好我是一个子条目"
+            android:textColor="@color/color_white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:ignore="HardcodedText" />
+
+    </com.sunny.zyui.layout.ZyBgLayout>
+</LinearLayout>

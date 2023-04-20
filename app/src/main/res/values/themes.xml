@@ -21,6 +21,7 @@
         <attr name="radiusBottomStart" format="dimension" />
         <attr name="radiusBottomEnd" format="dimension" />
         <attr name="radius" format="dimension" />
-        <attr name="android:background"/>
+        <attr name="borderWidth" format="dimension"/>
+        <attr name="borderColor" format="color"/>
     </declare-styleable>
 </resources>
