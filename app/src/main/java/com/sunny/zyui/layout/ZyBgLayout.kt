@@ -87,7 +87,6 @@ class ZyBgLayout : ConstraintLayout {
         super.draw(canvas)
 
         if (borderWidth > 0 && borderColor != 0) {
-            path.addRoundRect(rectF,radii,Path.Direction.CW)
             canvas.drawPath(path,borderPaint)
         }
     }
