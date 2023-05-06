@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal">
+    android:orientation="vertical">
 
     <com.sunny.zyui.layout.ZyBgLayout
         android:id="@+id/zy"
@@ -34,6 +34,8 @@
         android:layout_marginTop="@dimen/dp_10"
         android:background="@color/color_theme"
         app:radiusTopStart="@dimen/dp_20"
+        app:radiusTopEnd="@dimen/dp_20"
+        app:radiusBottomStart="20dp"
         app:radiusBottomEnd="@dimen/dp_20"
         app:borderColor="@color/font_red"
         app:borderWidth="@dimen/dp_4"
@@ -49,6 +51,5 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             tools:ignore="HardcodedText" />
-
     </com.sunny.zyui.layout.ZyBgLayout>
 </LinearLayout>
